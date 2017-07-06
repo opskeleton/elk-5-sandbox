@@ -1,0 +1,14 @@
+FORGE
+  remote: https://forgeapi.puppetlabs.com
+  specs:
+    elastic-kibana (5.0.0)
+      puppetlabs-apt (< 3.0.0, >= 2.0.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
+    puppetlabs-apt (2.4.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.13.0)
+    puppetlabs-stdlib (4.17.1)
+
+DEPENDENCIES
+  elastic-kibana (>= 0)
+  puppetlabs-stdlib (>= 0)
+

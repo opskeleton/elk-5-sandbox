@@ -1,3 +1,7 @@
-node 'kibana-5.local' {
-
+node default {
+  class { 'kibana':
+    config => {
+      'server.port' => '8080',
+    }
+  }
 }
