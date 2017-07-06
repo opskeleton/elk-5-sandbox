@@ -1,6 +1,6 @@
 --- 
   version: '0.0.1'
-  name: kibana-5
+  name: elk-5
   includes: 
     - Puppetfile
     - modules

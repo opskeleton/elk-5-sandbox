@@ -1,5 +1,5 @@
 # Intro 
-This project manages a sandbox for [kibana-5](url)
+This project manages a sandbox for [elk-5](url)
 
 # Usage
 ```bash
