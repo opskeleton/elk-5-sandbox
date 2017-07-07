@@ -4,6 +4,15 @@ FORGE
     elastic-kibana (5.0.0)
       puppetlabs-apt (< 3.0.0, >= 2.0.0)
       puppetlabs-stdlib (< 5.0.0, >= 4.5.0)
+    elastic-logstash (5.3.0)
+      puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
+    pcfens-filebeat (0.12.0)
+      puppet-archive (< 2.0.0, >= 0.5.0)
+      puppetlabs-apt (< 3.0.0, >= 2.0.0)
+      puppetlabs-powershell (< 3.0.0, >= 1.0.1)
+      puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
+    puppet-archive (1.3.0)
+      puppetlabs-stdlib (< 5.0.0, >= 4.6.0)
     puppet-yum (1.0.0)
       puppetlabs-concat (< 3.0.0, >= 1.2.5)
       puppetlabs-stdlib (< 5.0.0, >= 4.10.0)
@@ -13,8 +22,13 @@ FORGE
       puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
     puppetlabs-java (1.6.0)
       puppetlabs-stdlib (< 5.0.0, >= 2.4.0)
+    puppetlabs-powershell (2.1.0)
     puppetlabs-stdlib (4.17.1)
     richardc-datacat (0.6.2)
+    saz-timezone (3.4.0)
+      puppetlabs-stdlib (>= 2.3.0)
+      stm-debconf (>= 1.0.0)
+    stm-debconf (2.0.0)
 
 GIT
   remote: git://github.com/pulling-strings/puppet-baseline.git
@@ -46,7 +60,10 @@ GIT
 
 DEPENDENCIES
   elastic-kibana (>= 0)
+  elastic-logstash (>= 0)
+  pcfens-filebeat (>= 0)
   puppetlabs-stdlib (>= 0)
+  saz-timezone (= 3.4.0)
   strings-baseline (>= 0)
   strings-elasticsearch (>= 0)
   strings-jdk (>= 0)

@@ -29,9 +29,22 @@ node default {
     }
   }
 
-  # Service['elasticsearch-kibana-01'] ~> Service['kibana']
+  class { 'logstash':
+    manage_repo => false,
+    service_provider => 'systemd'
+  }
+
+  logstash::configfile { 'inputs':
+    source=> 'puppet:///modules/logconf/syslog.conf',
+  }
 
   elasticsearch::instance { 'kibana-01':
     ensure => present
   }
+
+  class {'timezone':
+    timezone => 'Australia/Sydney'
+  } ~> Service<||>
+
+  ensure_packages(['debconf-utils'],{})
 }
