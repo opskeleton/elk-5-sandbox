@@ -18,4 +18,7 @@ mod 'strings/elasticsearch',
 mod 'strings/jdk',
   :git => 'git://github.com/pulling-strings/puppet-jdk.git'
 
+mod 'strings/elk',
+    :git => 'git://github.com/pulling-strings/puppet-elk.git'
+
 mod 'saz/timezone','3.4.0'
