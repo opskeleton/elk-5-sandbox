@@ -22,7 +22,7 @@ FORGE
       puppetlabs-stdlib (< 5.0.0, >= 4.2.0)
     puppetlabs-java (1.6.0)
       puppetlabs-stdlib (< 5.0.0, >= 2.4.0)
-    puppetlabs-powershell (2.1.0)
+    puppetlabs-powershell (2.1.1)
     puppetlabs-stdlib (4.17.1)
     richardc-datacat (0.6.2)
     saz-timezone (3.4.0)
@@ -52,7 +52,7 @@ GIT
 GIT
   remote: git://github.com/pulling-strings/puppet-elk.git
   ref: master
-  sha: fa96f05097efc1672ed9a8f952c710bd859e77cf
+  sha: 6ab29e2d0493b7cab22b9ff74f93095f57b8c0ef
   specs:
     strings-elk (0.1.0)
       puppetlabs-stdlib (>= 1.0.0)
